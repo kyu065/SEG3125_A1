@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can Swim Booking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            height: 100%;
+            background: url('booking.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            background-color: #4A90E2;
+            padding: 20px;
+            color: white;
+            font-size: 84px; 
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .header .title {
+            padding-left: 20px;
+        }
+        .nav {
+            display: flex;
+            gap: 10px;
+            padding-right: 50px; 
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #5A9EE2;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .nav a:hover {
+            background-color: #3A7EC2;
+        }
+        .form-container {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px; 
+            margin-top: 20px;
+            border-radius: 10px;
+            width: 70%;
+        }
+        .form-section {
+            margin: 20px; 
+            width: 600%; 
+            max-width: 1000px; 
+            text-align: right; 
+        }
+        .form-section h3 {
+            background-color: #357ABD;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 20px; 
+        }
+        .form-section input, .form-section select {
+            display: block;
+            width: calc(100% - 22px); 
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-button {
+            background-color: #357ABD;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-align: center;
+            margin: 20px 0;
+            margin-left: 430px;
+        }
+        .submit-button:hover {
+            background-color: #285a8b;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">"CAN SWIM"</div>
+        <div class="nav">
+            <a href="#">Bookings</a>
+            <a href="Lessons.html">Lessons</a>
+            <a href="Professionals.html">Our Team</a>
+            <a href="AboutUs.html">Contact Us</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <form>
+                <div class="form-section">
+                    <h3>CONTACT INFORMATION</h3>
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="phone" placeholder="Phone Number">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="text" name="address" placeholder="Address">
+                </div>
+                <div class="form-section">
+                    <h3>BOOKING INFORMATION</h3>
+                    <select name="service">
+                        <option value="" disabled selected>Select Service</option>
+                        <option value="sl">Swimming Lessons</option>
+                        <option value="ws">Water Safety</option>
+                        <option value="ps">Power Swim</option>
+                        <option value="pss">Private Swim Session</option>
+                    </select>
+                    <select name="professional">
+                        <option value="" disabled selected>Select Professional</option>
+                        <option value="Lion">Lion</option>
+                        <option value="Bear">Bear</option>
+                        <option value="Panda">Panda</option>
+                        <option value="Tiger">Tiger</option>
+                    </select>
+                    <input type="date" name="date" placeholder="Select Date">
+                    <input type="time" name="time" placeholder="Select Time">
+                </div>
+                <div class="submit-button">
+                    <a href="BookingConfirmation.html" class="cta">Book Now!</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

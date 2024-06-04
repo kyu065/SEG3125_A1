@@ -1,0 +1,342 @@
+/* General */
+/*-----------------------------------------*/
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+.header {
+    background-color: #4A90E2;
+    padding: 20px;
+    color: white;
+    font-size: 84px; 
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header .title {
+    padding-left: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+    padding-right: 50px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #5A9EE2;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #3A7EC2;
+}
+
+/* Homepage */
+/*-----------------------------------------*/
+.hero {
+    background-image: url('home.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: calc(80vh - 80px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero .cta {
+    margin-top: 20px;
+    background-color: #4A90E2;
+    padding: 10px 20px; 
+    border-radius: 4px;
+    font-size: 24px; 
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta:hover {
+    background-color: #3A7EC2;
+}
+
+.footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    color: #333; 
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons img {
+    width: 30px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.footer .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* About Us */
+/*-----------------------------------------*/
+body.about {
+    background: url('AboutUsBg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content, .contact {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%;
+    height: 500px;
+}
+
+.reviews {
+    overflow-y: auto;
+    max-height: 265px;
+    background-color: #5A9EE2;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    height: 500px;
+}
+
+.review {
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: gold;
+}
+
+.contact .map {
+    background-color: #5A9EE2;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+iframe {
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+}
+
+
+/* Booking Confirmation */
+/*-----------------------------------------*/
+body.booking-confirmation {
+    background-image: url('BookingCfBg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    text-align: center;
+}
+
+.ok-button {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Booking Page */
+/*-----------------------------------------*/
+/* moved */
+
+/* Professionals Page */
+/*-----------------------------------------*/
+body.professionals {
+    background: url('AboutUsBg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+    padding: 20px;
+}
+
+.team-member {
+    background-color: #5A9EE2;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(50% - 20px); 
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.team-member img {
+    border-radius: 8px;
+    margin-right: 20px;
+    width: 150px; 
+    height: 150px; 
+}
+
+.team-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-info-header {
+    text-align: left; 
+}
+
+.team-info-header h3, .team-info-header h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.team-info-header h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.card-description {
+    text-align: left; 
+    margin-top: 10px;
+}
+
+.card-description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.card-description li {
+    margin: 5px 0;
+}
+
+/* Lesson Page */
+/*-----------------------------------------*/
+body.lessons {
+    background: url('AboutUsBg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.lesson-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+    padding: 20px;
+}
+
+.lesson-plan {
+    background-color: #5A9EE2;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(50% - 20px); 
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.lesson-plan img {
+    border-radius: 8px;
+    margin-right: 20px;
+    width: 150px; 
+    height: 150px; 
+}
+
+.lesson-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.lesson-info-header {
+    text-align: left; 
+}
+
+.lesson-info-header h3, .lesson-info-header h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.lesson-info-header h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.lesson-description {
+    text-align: left; 
+    margin-top: 10px;
+}
+
+.lesson-description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.lesson-description li {
+    margin: 5px 0;
+}
+
+
